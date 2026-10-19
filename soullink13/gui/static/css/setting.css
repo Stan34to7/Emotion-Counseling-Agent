@@ -1,0 +1,105 @@
+
+html {
+	font-size: 14px;
+}
+  
+body {
+	background-image: url(../images/Bg_pic.png);
+	background-repeat: repeat-x;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+	  'Droid Sans', 'Helvetica Neue', 'Microsoft Yahei', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100%;
+	height: 100vh; 
+	min-width: 1719px;
+	overflow: hidden; 
+  }
+ 
+
+
+.setting_fay{width: 1200px; padding:10px 25px;height: 455px;}
+.setting_fay_top{font-size: 16px; color: #a3aaaf; line-height: 50px; text-align: left; padding-left: 15px;}
+.setting_name{ float: left;width: 33%;}
+.setting_name ul{list-style-type: none; width: 305px;; }
+.setting_name ul li{ margin: 25px 0; }
+.font_name {font-size: 15px;font-family: Microsoft YaHei;line-height: 21px;color: #2a2a2a;margin-right: 6px;}
+.section_1 {background-color: #ffffff;border-radius: 1px;width: 240px;height: 35px;border: solid 1px #d9d9d9;line-height: 30px;font-size: 16px;}
+
+.setting_work{ float: left;width: 33%;}
+.setting_work ul{list-style-type: none; width: 330px; }
+.setting_work ul li{ margin: 25px 0; }
+
+.setting_rup{float: right;width: 34%;}
+.setting_wakeup{ width: 330px;}
+.setting_wakeup ul{list-style-type: none; width: 330px;}
+.setting_wakeup ul li{ margin: 25px 0; }
+.microphone{ width: 330px; height: 30px;}
+.microphone_group1{ width: 145px; float: right; }
+
+.setting_autoplay{width: 1086px; background-color: #ffffff; height: 40px; margin-left: 65px; padding:25px 30px; margin-top: 10px;;}
+.section_2 {background-color: #f5f7fa;border-radius: 3px;width: 938px;height: 35px;border: solid 1px #f5f7fa;}
+
+.Page3{ padding: 40px;}
+.Page3 ul{ padding: 40px;}
+.Page3 ul li{font-size: 18px;font-family: Microsoft YaHei;color: #2a2a2a; line-height:55px;list-style-type: none;}
+.Page3 ul li a{color: #0064fb;text-decoration: underline;}
+
+/* --- Soullink visual alignment overrides --- */
+:root {
+  --sl-bg-1: #ffeef5;
+  --sl-bg-2: #fff5e6;
+  --sl-bg-3: #ffe4cc;
+  --sl-text: #4a3a3a;
+  --sl-panel: rgba(255, 255, 255, 0.7);
+  --sl-panel-strong: rgba(255, 255, 255, 0.85);
+  --sl-border: rgba(255, 192, 203, 0.45);
+  --sl-shadow: 0 20px 60px rgba(255, 169, 200, 0.25);
+  --sl-glass-shadow: 0 10px 30px rgba(70, 20, 40, 0.08);
+  --sl-accent: #ff7ab6;
+  --sl-accent-2: #ffb07a;
+  --sl-accent-3: #9b7bff;
+}
+
+body {
+  background: linear-gradient(135deg, var(--sl-bg-1) 0%, var(--sl-bg-2) 50%, var(--sl-bg-3) 100%);
+  background-attachment: fixed;
+  color: var(--sl-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.setting_fay {
+  background: var(--sl-panel);
+  border: 1px solid var(--sl-border);
+  border-radius: 18px;
+  box-shadow: var(--sl-shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.setting_fay_top {
+  color: #7a5b6c;
+}
+
+.section_1,
+.section_2,
+.setting_autoplay {
+  background: var(--sl-panel-strong);
+  border: 1px solid var(--sl-border);
+  border-radius: 12px;
+  box-shadow: var(--sl-glass-shadow);
+}
+
+.setting_autoplay {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.font_name {
+  color: #5b4553;
+}
+
+.Page3 ul li a {
+  color: #6a3f7a;
+}

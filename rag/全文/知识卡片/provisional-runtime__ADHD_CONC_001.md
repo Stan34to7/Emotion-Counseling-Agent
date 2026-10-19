@@ -1,0 +1,66 @@
+# ADHD_CONC_001 · Poor concentration insufficient for ADHD
+
+来源文件：`knowledge-cards/provisional-runtime/ADHD_CONC_001.yaml`
+
+```yaml
+id: ADHD_CONC_001
+type: INSUFFICIENT_FOR
+title: Poor concentration insufficient for ADHD
+clinical_claim: Subjective poor concentration alone is insufficient for ADHD; need developmental history,
+  multi-setting persistence, impairment, and differentials (mood/anxiety/sleep/substance).
+applies_to:
+- ADHD
+phenomena:
+- poor_concentration
+supports: []
+does_not_establish:
+- adhd
+alternative_explanations:
+- depression
+- anxiety
+- sleep_deprivation
+- substance
+- burnout
+counterevidence: []
+confounds: []
+required_qualifiers:
+- onset
+- duration
+- frequency
+- severity
+- context
+- impairment
+candidate_probes:
+- QB-ADHD-DEV-01
+next_if_positive: []
+next_if_negative: []
+sources:
+- source_id: nice-ng87
+  locator: 1.3.1–1.3.3
+  claim_id: CLM-POOR-CONCENTRATION-INSUFFICIENT-ADHD
+provenance:
+  extraction_method: official_guideline_or_manual_paraphrase
+  paraphrased: true
+  source_verified: true
+  structure_verified: true
+review:
+  clinical_reviewed: false
+  expert_review: PENDING_EXTERNAL
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+high_stakes: false
+skill_promotion:
+  allowed: true
+  runtime_permission: PROVISIONAL_RUNTIME
+  gate_reason: semantic_source_audit_pass; expert review pending
+  status: IMPLEMENTED_PENDING_EXPERT_REVIEW
+audit:
+  decision: KEEP
+  reason: logical implication of NG87 diagnosis requirements
+verification:
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+runtime_permission: PROVISIONAL_RUNTIME
+```

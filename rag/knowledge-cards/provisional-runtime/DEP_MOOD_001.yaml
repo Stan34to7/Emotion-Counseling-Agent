@@ -1,0 +1,59 @@
+id: DEP_MOOD_001
+type: INSUFFICIENT_FOR
+title: Low mood insufficient for depressive disorder
+clinical_claim: Low mood report alone is insufficient for depressive disorder diagnosis without severity,
+  duration/course, functioning, and related features assessment.
+applies_to:
+- DEP
+phenomena:
+- low_mood
+supports: []
+does_not_establish:
+- depressive_disorder
+- depressive_episode
+alternative_explanations: []
+counterevidence: []
+confounds: []
+required_qualifiers:
+- onset
+- duration
+- frequency
+- severity
+- context
+- impairment
+candidate_probes:
+- QB-DEP-FUNCTION-01
+next_if_positive: []
+next_if_negative: []
+sources:
+- source_id: nice-ng222
+  locator: 1.2.6
+  claim_id: CLM-LOW-MOOD-INSUFFICIENT-DEP-DX
+- source_id: who-icd11-cddr-2024
+  locator: Depressive episode essential features
+  claim_id: CLM-LOW-MOOD-INSUFFICIENT-DEP-DX
+provenance:
+  extraction_method: official_guideline_or_manual_paraphrase
+  paraphrased: true
+  source_verified: true
+  structure_verified: true
+review:
+  clinical_reviewed: false
+  expert_review: PENDING_EXTERNAL
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+high_stakes: false
+skill_promotion:
+  allowed: true
+  runtime_permission: PROVISIONAL_RUNTIME
+  gate_reason: semantic_source_audit_pass; expert review pending
+  status: IMPLEMENTED_PENDING_EXPERT_REVIEW
+audit:
+  decision: KEEP
+  reason: NG222 1.2.6 + CDDR multi-feature
+verification:
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+runtime_permission: PROVISIONAL_RUNTIME

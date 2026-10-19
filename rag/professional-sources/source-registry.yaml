@@ -1,0 +1,930 @@
+version: 0.2.0
+updated: '2026-08-09'
+retrieved_date_global: '2026-08-09'
+sources:
+- source_id: who-icd11-cddr-2024
+  authority: World Health Organization
+  title: Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental
+    disorders (CDDR)
+  source_type: diagnostic_manual
+  publication_date: '2024'
+  last_update_date: '2024'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.who.int/publications/i/item/9789240077263
+  iris: https://iris.who.int/handle/10665/375767
+  scope:
+    ages:
+    - child
+    - adolescent
+    - adult
+    disorders:
+    - mood
+    - anxiety
+    - psychosis
+    - adhd
+    - neurodevelopmental
+    - risk_related
+    constructs:
+    - diagnostic_requirements
+    - differential
+    - course
+    - boundary_with_normality
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: open_with_terms
+    jurisdiction: international_who
+    commercial_reuse: conditional_nc_nd_review
+    verbatim_reuse: restricted
+    notes: IRIS record indicates CC BY-NC-ND 3.0 IGO class terms. Skill uses paraphrase/structure with
+      locators; no full-manual redistribution.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: who-mhgap-guideline-2023
+  authority: World Health Organization
+  title: mhGAP guideline for mental, neurological and substance use disorders (2023)
+  source_type: guideline
+  publication_date: '2023'
+  last_update_date: '2023'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.who.int/publications/i/item/9789240084278
+  scope:
+    ages:
+    - child
+    - adolescent
+    - adult
+    disorders:
+    - depression
+    - psychosis
+    - bipolar
+    - self_harm
+    - substance
+    - priority_mns
+    constructs:
+    - evidence_recommendations
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: open_with_terms
+    jurisdiction: international_who
+    commercial_reuse: conditional
+    verbatim_reuse: restricted
+    notes: Use for evidence freshness; not full specialist interview substitute.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: who-mhgap-ig-2.0
+  authority: World Health Organization
+  title: mhGAP Intervention Guide Version 2.0
+  source_type: guideline
+  publication_date: '2016'
+  last_update_date: '2016'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.who.int/publications/i/item/9789241549790
+  pdf: https://iris.who.int/bitstream/handle/10665/250239/9789241549790-eng.pdf
+  scope:
+    ages:
+    - child
+    - adolescent
+    - adult
+    disorders:
+    - depression
+    - psychosis
+    - bipolar
+    - self_harm
+    - substance
+    - epilepsy
+    - dementia
+    constructs:
+    - assessment_algorithms
+    - clinical_decision_workflow
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+    notes: IG remains structural workflow reference; pair with 2023 guideline for recommendation freshness.
+  rights:
+    status: open_with_terms
+    jurisdiction: international_who
+    commercial_reuse: conditional
+    verbatim_reuse: restricted
+    notes: Assessment flowchart structure high value; management/pharmacology out of diagnosis-skill scope
+      unless separately approved.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: nice-ng222
+  authority: NICE
+  title: 'Depression in adults: treatment and management (NG222)'
+  source_type: guideline
+  publication_date: '2022-06-29'
+  last_update_date: null
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.nice.org.uk/guidance/ng222
+  recommendations_url: https://www.nice.org.uk/guidance/ng222/chapter/recommendations
+  scope:
+    ages:
+    - adult
+    disorders:
+    - depression
+    constructs:
+    - assessment
+    - severity
+    - functioning
+    - risk
+    - bipolar_screen
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: nice_uk_open_content_licence_conditional
+    jurisdiction: UK_primary
+    commercial_reuse: conditional_international
+    verbatim_reuse: restricted_with_attribution
+    notes: UK Open Content Licence self-assess for UK; international commercial reuse needs NICE permission.
+      Prefer paraphrased assessment dimensions.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: nice-cg113
+  authority: NICE
+  title: Generalised anxiety disorder and panic disorder in adults (CG113)
+  source_type: guideline
+  publication_date: '2011-01-26'
+  last_update_date: '2020'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.nice.org.uk/guidance/cg113
+  recommendations_url: https://www.nice.org.uk/guidance/cg113/chapter/1-recommendations
+  scope:
+    ages:
+    - adult
+    disorders:
+    - gad
+    - panic
+    constructs:
+    - assessment
+    - functioning
+    - comorbidity
+    - substance
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: nice_uk_open_content_licence_conditional
+    jurisdiction: UK_primary
+    commercial_reuse: conditional_international
+    verbatim_reuse: restricted_with_attribution
+    notes: Same NICE reuse regime as other NICE sources.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: nice-cg185
+  authority: NICE
+  title: 'Bipolar disorder: assessment and management (CG185)'
+  source_type: guideline
+  publication_date: '2014-09-24'
+  last_update_date: null
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.nice.org.uk/guidance/cg185
+  recommendations_url: https://www.nice.org.uk/guidance/cg185/chapter/1-recommendations
+  scope:
+    ages:
+    - adult
+    - young_person
+    disorders:
+    - bipolar
+    constructs:
+    - assessment
+    - differential
+    - risk
+    - mood_history
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: nice_uk_open_content_licence_conditional
+    jurisdiction: UK_primary
+    commercial_reuse: conditional_international
+    verbatim_reuse: restricted_with_attribution
+    notes: Same NICE reuse regime.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: nice-cg178
+  authority: NICE
+  title: 'Psychosis and schizophrenia in adults: prevention and management (CG178)'
+  source_type: guideline
+  publication_date: '2014-02-12'
+  last_update_date: null
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.nice.org.uk/guidance/cg178
+  recommendations_url: https://www.nice.org.uk/guidance/cg178/chapter/1-recommendations
+  scope:
+    ages:
+    - adult
+    disorders:
+    - psychosis
+    - schizophrenia
+    constructs:
+    - comprehensive_assessment
+    - risk
+    - physical_health
+    - psychosocial
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: nice_uk_open_content_licence_conditional
+    jurisdiction: UK_primary
+    commercial_reuse: conditional_international
+    verbatim_reuse: restricted_with_attribution
+    notes: Same NICE reuse regime.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: nice-ng87
+  authority: NICE
+  title: 'Attention deficit hyperactivity disorder: diagnosis and management (NG87)'
+  source_type: guideline
+  publication_date: '2018-03-14'
+  last_update_date: '2024'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.nice.org.uk/guidance/ng87
+  recommendations_url: https://www.nice.org.uk/guidance/ng87/chapter/recommendations
+  scope:
+    ages:
+    - child
+    - adolescent
+    - adult
+    disorders:
+    - adhd
+    constructs:
+    - diagnosis
+    - multi_setting
+    - rating_scales_limitation
+    - functioning
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: nice_uk_open_content_licence_conditional
+    jurisdiction: UK_primary
+    commercial_reuse: conditional_international
+    verbatim_reuse: restricted_with_attribution
+    notes: Same NICE reuse regime. 2024 amendment notes QbTest option for ages 6–17 — still not rating-scale-alone
+      diagnosis.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: nice-ng225
+  authority: NICE
+  title: 'Self-harm: assessment, management and preventing recurrence (NG225)'
+  source_type: guideline
+  publication_date: '2022-09-07'
+  last_update_date: null
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.nice.org.uk/guidance/ng225
+  recommendations_url: https://www.nice.org.uk/guidance/ng225/chapter/recommendations
+  scope:
+    ages:
+    - child
+    - adolescent
+    - adult
+    - older_adult
+    disorders:
+    - self_harm
+    - suicide_related
+    constructs:
+    - psychosocial_assessment
+    - risk_formulation
+    - anti_risk_scale
+  evidence_tier: primary_authoritative
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: nice_uk_open_content_licence_conditional
+    jurisdiction: UK_primary
+    commercial_reuse: conditional_international
+    verbatim_reuse: restricted_with_attribution
+    notes: Same NICE reuse regime. Architecture-critical for forbidding LOW/MEDIUM/HIGH prediction tools.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: apa-cross-cutting-architecture
+  authority: American Psychiatric Association
+  title: DSM-5-TR Online Assessment Measures — Cross-Cutting Symptom Measures (architecture reference)
+  source_type: framework
+  publication_date: null
+  last_update_date: null
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.psychiatry.org/psychiatrists/practice/dsm/educational-resources/assessment-measures
+  scope:
+    ages:
+    - adult
+    disorders:
+    - transdiagnostic
+    constructs:
+    - cross_domain_screen
+    - level1_level2_architecture
+  evidence_tier: secondary_architecture
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: copyright_restricted
+    jurisdiction: US
+    commercial_reuse: false_without_license
+    verbatim_reuse: false
+    notes: 'Structure-only: broad screen then deeper assessment. No item text in Skill.'
+  allowed_usage:
+    ontology: true
+    evidence_rule: false
+    differential_rule: false
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: nimh-rdoc-domains
+  authority: NIMH
+  title: Definitions of the RDoC Domains and Constructs
+  source_type: framework
+  publication_date: null
+  last_update_date: null
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.nimh.nih.gov/research/research-funded-by-nimh/rdoc/definitions-of-the-rdoc-domains-and-constructs
+  scope:
+    ages:
+    - all
+    disorders: []
+    constructs:
+    - negative_valence
+    - positive_valence
+    - cognitive
+    - social
+    - arousal_regulation
+    - sensorimotor
+  evidence_tier: research_framework
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: public_us_government_page
+    jurisdiction: US
+    commercial_reuse: generally_permitted_with_attribution_norms
+    verbatim_reuse: limited_short_quotes
+    notes: Research framework, not diagnostic system.
+  allowed_usage:
+    ontology: true
+    evidence_rule: false
+    differential_rule: false
+    interview_rule: false
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: ipip-ori
+  authority: IPIP / Oregon Research Institute ecosystem
+  title: International Personality Item Pool
+  source_type: psychometric
+  publication_date: null
+  last_update_date: '2026-07-02'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://ipip.ori.org/
+  scope:
+    ages:
+    - adult
+    disorders: []
+    constructs:
+    - five_factor
+    - facets
+    - public_domain_items
+  evidence_tier: psychometric_resource
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: public_domain
+    jurisdiction: international
+    commercial_reuse: true
+    verbatim_reuse: true
+    notes: 'Official site: items and scales public domain; may copy/edit/translate/use without fee. Chat
+      inference still ≠ formal IPIP score.'
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: false
+    interview_rule: true
+    verbatim_question: true
+    psychometric_scoring: true
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: scid5-rv
+  authority: APA / Columbia distribution
+  title: Structured Clinical Interview for DSM-5 (SCID-5)
+  source_type: licensed_interview
+  publication_date: null
+  last_update_date: null
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://www.appi.org/
+  scope:
+    ages:
+    - adult
+    disorders:
+    - broad_dsm
+    constructs:
+    - semi_structured_interview
+  evidence_tier: licensed_reference
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: commercial_license_required
+    jurisdiction: US
+    commercial_reuse: false_without_license
+    verbatim_reuse: false
+    notes: DEFERRED for v0.1. Training materials separately sold. No scrape/reconstruct.
+  allowed_usage:
+    ontology: false
+    evidence_rule: false
+    differential_rule: false
+    interview_rule: false
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  v0_1_status: DEFERRED_LICENSED_REFERENCE
+  blocking: false
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+  embed_policy: forbidden_without_license
+- source_id: expert-elicitation-pool
+  authority: project-owned
+  title: Clinician expert elicitation sessions
+  source_type: expert
+  publication_date: null
+  last_update_date: null
+  retrieved_date: '2026-08-09'
+  canonical_reference: expert-elicitation/
+  scope:
+    ages:
+    - adult
+    disorders:
+    - core6
+    constructs:
+    - tacit_probe_craft
+    - misjudgment
+  evidence_tier: expert_tacit
+  version_status:
+    current: false
+    checked_at: '2026-08-09'
+  rights:
+    status: project_owned_pending
+    jurisdiction: project
+    commercial_reuse: pending_consent
+    verbatim_reuse: pending_consent
+    notes: PENDING_EXTERNAL — no fabricated expert reviews.
+  allowed_usage:
+    ontology: false
+    evidence_rule: false
+    differential_rule: false
+    interview_rule: false
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: false
+    rights_reviewed: false
+    clinical_reviewed: false
+  local_artifact:
+    path: expert-elicitation/
+    sha256: null
+  expert_review: PENDING_EXTERNAL
+- source_id: fleeson-gallagher-2009-esm
+  authority: Fleeson & Gallagher
+  title: The Implications of Big-Five Standing for the Distribution of Trait Manifestation in Behavior
+    (experience-sampling meta-analysis)
+  source_type: systematic_review
+  publication_date: '2009'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2791901/
+  scope:
+    ages:
+    - adult
+    disorders: []
+    constructs:
+    - trait_state_aggregation
+    - cross_situational_behavior
+  evidence_tier: peer_reviewed_meta
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: publisher_copyright_pmc_accessible
+    jurisdiction: US
+    commercial_reuse: paraphrase_citation_only
+    verbatim_reuse: restricted
+    notes: Cite findings; do not dump article text
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: false
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: bleidorn-2022-stability-meta
+  authority: Bleidorn et al.
+  title: 'Personality stability and change: A meta-analysis of longitudinal studies (Psychological Bulletin)'
+  source_type: systematic_review
+  publication_date: '2022'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://doi.org/10.1037/bul0000365
+  scope:
+    ages:
+    - lifespan
+    disorders: []
+    constructs:
+    - rank_order_stability
+    - mean_level_change
+  evidence_tier: peer_reviewed_meta
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: publisher_copyright
+    jurisdiction: international
+    commercial_reuse: paraphrase_citation_only
+    verbatim_reuse: restricted
+    notes: Paraphrase findings with DOI
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: false
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: downey-feldman-rs-1996
+  authority: Downey & Feldman lineage / A-RSQ literature
+  title: Rejection sensitivity construct and Adult Rejection Sensitivity Questionnaire validity literature
+  source_type: psychometric
+  publication_date: '1996'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://pubmed.ncbi.nlm.nih.gov/36048068/
+  scope:
+    ages:
+    - adult
+    disorders: []
+    constructs:
+    - rejection_sensitivity
+  evidence_tier: psychometric_plus_validity_studies
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: publisher_copyright
+    jurisdiction: international
+    commercial_reuse: paraphrase_citation_only
+    verbatim_reuse: 'false'
+    notes: Do not copy questionnaire items
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: smith-alloy-2010-rumination-roadmap
+  authority: Smith & Alloy
+  title: 'A roadmap to rumination: definition, assessment, conceptualization review'
+  source_type: systematic_review
+  publication_date: '2009'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC2832862/
+  scope:
+    ages:
+    - adult
+    disorders:
+    - depression
+    - anxiety
+    constructs:
+    - rumination
+  evidence_tier: peer_reviewed_review
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: publisher_copyright_pmc_accessible
+    jurisdiction: US
+    commercial_reuse: paraphrase_citation_only
+    verbatim_reuse: restricted
+    notes: Paraphrase; no scale item dump
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: er-transdiagnostic-meta-2026
+  authority: Emotion regulation clinical meta-analysis literature
+  title: 'Emotion regulation in mental disorders: systematic review and multilevel meta-analysis (transdiagnostic
+    impairments)'
+  source_type: systematic_review
+  publication_date: '2026'
+  retrieved_date: '2026-08-09'
+  canonical_reference: https://doi.org/10.1037/bul0000512
+  scope:
+    ages:
+    - adult
+    disorders:
+    - transdiagnostic
+    constructs:
+    - emotion_regulation
+    - rumination
+    - suppression
+    - reappraisal
+  evidence_tier: peer_reviewed_meta
+  version_status:
+    current: true
+    checked_at: '2026-08-09'
+  rights:
+    status: publisher_copyright
+    jurisdiction: international
+    commercial_reuse: paraphrase_citation_only
+    verbatim_reuse: restricted
+    notes: Paraphrase effect-direction findings only
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: true
+    interview_rule: true
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review:
+    source_verified: true
+    rights_reviewed: true
+    clinical_reviewed: false
+  local_artifact:
+    path: null
+    sha256: null
+- source_id: fraley-ecrr-2000
+  authority: Fraley, Waller, and Brennan attachment measurement lineage
+  title: An item response theory analysis of self-report measures of adult attachment
+  source_type: original_psychometric_paper
+  publication_date: '2000'
+  retrieved_date: '2026-08-23'
+  canonical_reference: https://doi.org/10.1037/0022-3514.78.2.350
+  scope:
+    ages: [adult]
+    disorders: []
+    constructs: [attachment_anxiety, attachment_avoidance]
+  evidence_tier: peer_reviewed_original
+  version_status: {current: true, checked_at: '2026-08-23'}
+  rights:
+    status: publisher_copyright
+    jurisdiction: international
+    commercial_reuse: construct_metadata_only_pending_permission
+    verbatim_reuse: restricted
+    notes: Do not embed ECR-R item text without explicit rights review.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: false
+    interview_rule: false
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review: {source_verified: false, rights_reviewed: false, clinical_reviewed: false}
+  local_artifact: {path: null, sha256: null}
+- source_id: jones-paulhus-sd3-2014
+  authority: Jones and Paulhus
+  title: Introducing the Short Dark Triad (SD3)
+  source_type: original_psychometric_paper
+  publication_date: '2014'
+  retrieved_date: '2026-08-23'
+  canonical_reference: https://doi.org/10.1177/1073191113514105
+  scope:
+    ages: [adult]
+    disorders: []
+    constructs: [subclinical_narcissism, machiavellianism, subclinical_psychopathy]
+  evidence_tier: peer_reviewed_original
+  version_status: {current: true, checked_at: '2026-08-23'}
+  rights:
+    status: publisher_copyright
+    jurisdiction: international
+    commercial_reuse: construct_metadata_only_pending_permission
+    verbatim_reuse: restricted
+    notes: Do not embed SD3 item text; constructs are research personality dimensions, not diagnoses.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: false
+    interview_rule: false
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review: {source_verified: false, rights_reviewed: false, clinical_reviewed: false}
+  local_artifact: {path: null, sha256: null}
+- source_id: healthmeasures-promis-standards-v2
+  authority: HealthMeasures / PROMIS
+  title: PROMIS Instrument Development and Validation Scientific Standards Version 2.0
+  source_type: measurement_standard
+  publication_date: null
+  retrieved_date: '2026-08-23'
+  canonical_reference: https://www.healthmeasures.net/images/PROMIS/PROMISStandards_Vers2.0_Final.pdf
+  scope:
+    ages: [all]
+    disorders: []
+    constructs: [item_bank_calibration, item_response_theory, computerized_adaptive_testing]
+  evidence_tier: measurement_standard
+  version_status: {current: true, checked_at: '2026-08-23'}
+  rights:
+    status: published_terms_apply
+    jurisdiction: international
+    commercial_reuse: citation_and_architecture_only
+    verbatim_reuse: restricted
+    notes: No PROMIS items, parameters, or branding embedded.
+  allowed_usage:
+    ontology: true
+    evidence_rule: true
+    differential_rule: false
+    interview_rule: false
+    verbatim_question: false
+    psychometric_scoring: false
+  exact_locator_required: true
+  review: {source_verified: false, rights_reviewed: false, clinical_reviewed: false}
+  local_artifact: {path: null, sha256: null}

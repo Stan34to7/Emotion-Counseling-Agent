@@ -1,0 +1,55 @@
+id: SH_RISK_001
+type: RISK_RULE
+title: No predictive risk scales
+clinical_claim: Do not use risk assessment tools/scales to predict future suicide or repetition of self-harm;
+  do not use them to decide treatment/discharge.
+applies_to:
+- SH
+phenomena:
+- self_harm
+- suicidal_ideation
+supports: []
+does_not_establish:
+- future_suicide_probability_score
+alternative_explanations: []
+counterevidence: []
+confounds: []
+required_qualifiers:
+- onset
+- duration
+- frequency
+- severity
+- context
+- impairment
+candidate_probes: []
+next_if_positive: []
+next_if_negative: []
+sources:
+- source_id: nice-ng225
+  locator: 1.6.1; 1.6.2
+  claim_id: CLM-SH-NO-RISK-SCALE-PREDICT
+provenance:
+  extraction_method: official_guideline_or_manual_paraphrase
+  paraphrased: true
+  source_verified: true
+  structure_verified: true
+review:
+  clinical_reviewed: false
+  expert_review: PENDING_EXTERNAL
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+high_stakes: true
+skill_promotion:
+  allowed: true
+  runtime_permission: PROVISIONAL_RUNTIME
+  gate_reason: semantic_source_audit_pass; expert review pending
+  status: IMPLEMENTED_PENDING_EXPERT_REVIEW
+audit:
+  decision: KEEP
+  reason: NG225 1.6.1–1.6.2 direct
+verification:
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+runtime_permission: PROVISIONAL_RUNTIME
