@@ -79,7 +79,7 @@ llm = ChatOpenAI(
         api_key=cfg.key_gpt_api_key,
         streaming=True,
         max_tokens=10000 , # 限制回复长度，约50字内，朗读20秒内
-        extra_body={"thinking": {"type": "disabled"}} if str(cfg.gpt_model_engine).startswith('deepseek') else {"enable_thinking": False}
+        extra_body={"enable_thinking": False}
     )
 
 

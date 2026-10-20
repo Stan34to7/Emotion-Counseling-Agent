@@ -128,7 +128,6 @@ def gpt_request(prompt: str,
       model=model,
       messages=[{"role": "user", "content": prompt}],
       max_tokens=max_tokens,
-      extra_body={"thinking": {"type": "disabled"}} if model.startswith('deepseek') else {},
       temperature=0.7
     )
     # 确保返回的内容是UTF-8编码

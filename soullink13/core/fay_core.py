@@ -44,8 +44,6 @@ elif cfg.tts_module == 'volcano':
     from tts.volcano_tts import Speech
 elif cfg.tts_module == 'voxcpm2':
     from tts.voxcpm2_tts import Speech
-elif cfg.tts_module == 'windows_sapi':
-    from tts.windows_sapi_tts import Speech
 else:
     from tts.ms_tts_sdk import Speech
 

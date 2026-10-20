@@ -213,7 +213,6 @@ def chat_with_model(message: str, username: str, model_id: Optional[str] = None,
             timeout=30,
             max_retries=0,
             temperature=0.7,
-            extra_body={"thinking": {"type": "disabled"}} if model_name.startswith('deepseek') else {},
             max_tokens=512  # 限制回复长度，约100字内；需更长可改为 1024 或 2048
         )
         

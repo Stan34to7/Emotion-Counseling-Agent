@@ -1,31 +1,20 @@
+# Local environments and runtime state
 .venv/
-*.tar.gz
-deployment/*.log
-deployment/processes.json
-deployment/runtime.env.json
-deployment/character-catalog.json
-deployment/validation.json
-soullink13/system.conf
-soullink13/config.json
-soullink13/memory/
-soullink13/logs/
-soullink13/cache_data/
-soullink13/samples/
-soullink13/temp_audio/
-soullink13/soullink/.env.local
-__pycache__/
-
-# Dependencies, caches, and build outputs
-node_modules/
 venv/
 env/
+.runtime/
 .tox/
 .nox/
+node_modules/
+__pycache__/
+*.py[cod]
+*.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-*.py[cod]
-*.egg-info/
+.cache/
+
+# Build and test outputs
 dist/
 build/
 .vite/
@@ -33,8 +22,12 @@ coverage/
 htmlcov/
 .coverage
 .coverage.*
+.gradle/
+*.apk
+*.aab
+*.tsbuildinfo
 
-# Local environment and secrets; retain configuration templates
+# Private configuration and credentials
 .env
 .env.*
 !.env.example
@@ -42,11 +35,43 @@ htmlcov/
 !.env.template
 *.pem
 *.key
-# This imported example contains a populated API credential
-/soullink13/simulation_engine/example-settings.py
+/soullink13/config.json
+/soullink13/system.conf
 /soullink13/simulation_engine/settings.py
+/soullink13/simulation_engine/example-settings.py
+/soullink13/faymcp/data/mcp_servers.json
 
-# Logs, databases, temporary files, and Office lock files
+# User data, generated assets, and downloaded model weights
+/soullink13/memory/
+/soullink13/logs/
+/soullink13/cache_data/
+/soullink13/samples/
+/soullink13/temp_audio/
+/soullink13/models/
+/soullink13/bisheintereactive-main/bisheintereactive-main/models/checkpoints/
+/soullink13/soullink/public/models/
+
+# Reference documents and local archives
+/material/
+/*.zip
+*.tar.gz
+
+# Downloaded runtimes and compiler intermediates
+/soullink13/test/ovr_lipsync/ffmpeg/
+/soullink13/test/ovr_lipsync/ovr_lipsync_exe/
+*.obj
+*.pdb
+*.ilk
+
+# Saved web pages and source backups
+/soullink13/soullink/src/charactergen.htm
+/soullink13/soullink/src/charactergen_files/
+/soullink13/soullink/back/
+*.new
+*.bak
+*.orig
+
+# Logs, databases, and temporary files
 *.log
 *.db
 *.db-journal
@@ -63,16 +88,17 @@ htmlcov/
 *.swo
 ~$*
 
-# OS and local editor state
+# OS and editor state
 .DS_Store
 Thumbs.db
 Desktop.ini
 .idea/
+.vscode/
 
-# Imported runtime character assets and downloaded model weights
-/soullink13/models/
-/soullink13/bisheintereactive-main/bisheintereactive-main/models/checkpoints/
-
-# Original source bundle and local deployment screenshot
-/*.zip
+# Local deployment state
+/deployment/*.log
+/deployment/processes.json
+/deployment/runtime.env.json
+/deployment/character-catalog.json
+/deployment/validation.json
 /deployment/preview.png
