@@ -1,0 +1,62 @@
+# ANX_ASSESS_001 · GAD comprehensive assessment
+
+来源文件：`knowledge-cards/provisional-runtime/ANX_ASSESS_001.yaml`
+
+```yaml
+id: ANX_ASSESS_001
+type: INTERVIEW_PROBE
+title: GAD comprehensive assessment
+clinical_claim: GAD assessment should not rely solely on number/severity/duration of symptoms; also consider
+  distress, functional impairment, comorbidity, substance misuse, medical conditions.
+applies_to:
+- ANX
+phenomena:
+- worry
+- anxiety_arousal
+- panic_symptoms
+supports: []
+does_not_establish: []
+alternative_explanations: []
+counterevidence: []
+confounds: []
+required_qualifiers:
+- onset
+- duration
+- frequency
+- severity
+- context
+- impairment
+candidate_probes:
+- QB-ANX-FUNCTION-01
+next_if_positive: []
+next_if_negative: []
+sources:
+- source_id: nice-cg113
+  locator: 1.2.6; 1.2.7
+  claim_id: CLM-ANX-COMPREHENSIVE
+provenance:
+  extraction_method: official_guideline_or_manual_paraphrase
+  paraphrased: true
+  source_verified: true
+  structure_verified: true
+review:
+  clinical_reviewed: false
+  expert_review: PENDING_EXTERNAL
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+high_stakes: false
+skill_promotion:
+  allowed: true
+  runtime_permission: PROVISIONAL_RUNTIME
+  gate_reason: semantic_source_audit_pass; expert review pending
+  status: IMPLEMENTED_PENDING_EXPERT_REVIEW
+audit:
+  decision: KEEP
+  reason: CG113 1.2.6–1.2.7 direct
+verification:
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+runtime_permission: PROVISIONAL_RUNTIME
+```

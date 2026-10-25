@@ -47,6 +47,7 @@ from urllib3.exceptions import InsecureRequestWarning
 from scheduler.thread_manager import MyThread
 from core import content_db
 from core import stream_manager
+from llm.knowledge_cards import retrieve_card_context
 from faymcp import tool_registry as mcp_tool_registry
 # os.environ["LANGCHAIN_TRACING_V2"] = "true"
 # os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
@@ -1740,6 +1741,7 @@ def question(content, username, observation=None, pure_mode=False, system_overri
     accumulated_text = ""
     default_punctuations = [",", ".", "!", "?", "\n", "\uFF0C", "\u3002", "\uFF01", "\uFF1F"]
     is_first_sentence = True
+    knowledge_card_results = []
 
     from core import stream_manager
     sm = stream_manager.new_instance()
@@ -1871,6 +1873,11 @@ def question(content, username, observation=None, pure_mode=False, system_overri
                     util.log(1, f"找到 {len(knowledge_results)} 条相关知识库信息")
         except Exception as exc:
             util.log(1, f"搜索知识库时出错: {exc}")
+
+        card_context, knowledge_card_results = retrieve_card_context(content)
+        if card_context:
+            knowledge_context = "\n\n".join(part for part in (card_context, knowledge_context) if part)
+            util.log(1, "[RAG] matched cards: " + ", ".join(card["id"] for card in knowledge_card_results))
 
         # 根据角色名字判断是否为历史人物，调整系统提示
         character_name = agent_desc['first_name']
@@ -2283,7 +2290,9 @@ def question(content, username, observation=None, pure_mode=False, system_overri
     # Optional expert-system path. Off unless CLINICAL_EXPERT_MODE=1.
     try:
         from llm.soullink_expert_hook import call_expert_turn, spoken_from_expert
-        _expert_result = call_expert_turn(username, content)
+        # Matched cards must reach the local generator; the independent expert service
+        # does not accept this corpus context and would otherwise bypass its boundaries.
+        _expert_result = None if pure_mode or knowledge_card_results else call_expert_turn(username, content)
         _expert_spoken = spoken_from_expert(_expert_result)
         if _expert_spoken:
             util.log(1, f"[clinical_expert] using expert spoken reply for {username}")

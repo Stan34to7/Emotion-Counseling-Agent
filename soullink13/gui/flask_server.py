@@ -346,6 +346,34 @@ def health_check():
     }), 200
 
 
+@__app.route('/api/knowledge/status', methods=['GET'])
+def api_knowledge_status():
+    from llm.knowledge_cards import get_card_store
+
+    return jsonify(get_card_store().status())
+
+
+@__app.route('/api/knowledge/search', methods=['POST'])
+def api_knowledge_search():
+    from llm.knowledge_cards import KnowledgeUnavailable, get_card_store
+
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return jsonify({'error': '请求体必须是 JSON 对象。'}), 400
+    query = data.get('query')
+    top_k = data.get('top_k', 3)
+    if not isinstance(query, str) or not query.strip() or len(query) > 2000:
+        return jsonify({'error': 'query 必须是 1 到 2000 字符的非空文本。'}), 400
+    if isinstance(top_k, bool) or not isinstance(top_k, int) or not 1 <= top_k <= 10:
+        return jsonify({'error': 'top_k 必须是 1 到 10 的整数。'}), 400
+    try:
+        store = get_card_store()
+        cards = store.search(query, top_k)
+        return jsonify({'cards': cards, 'count': len(cards), 'retrieval': store.status()})
+    except KnowledgeUnavailable as exc:
+        return jsonify({'error': str(exc), 'cards': [], 'count': 0}), 503
+
+
 def _get_faymcp_static_dir():
     return os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'faymcp', 'static'))
 
@@ -1360,6 +1388,14 @@ def direct_llm_api_call(data):
                 'content': "额外观察：\n" + "\n".join(observation_parts)
             })
         
+        if not pure_mode:
+            from llm.knowledge_cards import retrieve_card_context
+
+            query = next((m['content'] for m in reversed(messages) if m.get('role') == 'user'), '')
+            card_context, _ = retrieve_card_context(query)
+            if card_context:
+                messages.append({'role': 'system', 'content': card_context})
+
         # 使用配置中的API设置，不做任何修改
         base_url = config_util.gpt_base_url
         api_key = config_util.key_gpt_api_key
@@ -1450,6 +1486,7 @@ def api_direct_llm_chat():
             username=username,
             model_id=None,
             history=history,
+            use_knowledge_cards=False,
             system_prompt=system_prompt or SOULLINK_THERAPY_SYSTEM_PROMPT
         )
         reply = _normalize_childlike_tone_text(reply)

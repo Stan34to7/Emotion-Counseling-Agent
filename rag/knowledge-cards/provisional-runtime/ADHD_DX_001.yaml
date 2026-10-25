@@ -1,0 +1,62 @@
+id: ADHD_DX_001
+title_zh: ADHD 需要完整专业评估
+retrieval_examples_zh:
+- 网上多动症量表的分数很高，我想知道需要怎样进一步评估。
+retrieval_text_zh: 注意缺陷、多动、冲动，网上做了多动症量表，自测分数高就能诊断 ADHD 吗。评估不能只看量表，应由专业人员结合临床和社会心理评估、发展和精神科历史、他人观察及精神状态进行。
+type: DIAGNOSTIC_REQUIREMENT
+title: ADHD full assessment required
+clinical_claim: ADHD diagnosis requires specialist full clinical/psychosocial assessment, developmental
+  and psychiatric history, observer reports/mental state — not rating scales alone.
+applies_to:
+- ADHD
+phenomena:
+- inattention
+- hyperactivity
+- impulsivity
+supports: []
+does_not_establish:
+- adhd_from_rating_scale_alone
+alternative_explanations: []
+counterevidence: []
+confounds: []
+required_qualifiers:
+- onset
+- duration
+- frequency
+- severity
+- context
+- impairment
+candidate_probes:
+- QB-ADHD-DEV-01
+- QB-ADHD-SETTING-01
+next_if_positive: []
+next_if_negative: []
+sources:
+- source_id: nice-ng87
+  locator: 1.3.1; 1.3.2
+  claim_id: CLM-ADHD-FULL-ASSESSMENT
+provenance:
+  extraction_method: official_guideline_or_manual_paraphrase
+  paraphrased: true
+  source_verified: true
+  structure_verified: true
+review:
+  clinical_reviewed: false
+  expert_review: PENDING_EXTERNAL
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+high_stakes: false
+skill_promotion:
+  allowed: true
+  runtime_permission: PROVISIONAL_RUNTIME
+  gate_reason: semantic_source_audit_pass; expert review pending
+  status: IMPLEMENTED_PENDING_EXPERT_REVIEW
+audit:
+  decision: KEEP
+  reason: NG87 1.3.1–1.3.2 direct
+verification:
+  source_verified: true
+  structure_verified: true
+  expert_reviewed: false
+runtime_permission: PROVISIONAL_RUNTIME
