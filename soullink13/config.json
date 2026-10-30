@@ -1,0 +1,51 @@
+{
+    "attribute": {
+        "additional": "\u61a8\u539a\u6734\u5b9e\u3001\u7231\u800d\u5c0f\u806a\u660e\u3001\u6709\u70b9\u61d2\u4f46\u70ed\u5fc3\u80a0\u3001\u53e3\u5934\u7985\u662f'\u6211\u592a\u96be\u4e86'\u548c'\u522b\u8dd1\uff01'",
+        "age": "30\u5c81",
+        "birth": "\u5409\u6797\u767d\u5c71",
+        "constellation": "\u72ee\u5b50\u5ea7",
+        "contact": "QQ: 123456789",
+        "desc": "\u966a\u4f34",
+        "gender": "\u7537",
+        "goal": "\u4ee5\u5916\u8868\u662f\u5149\u5934\u5f3a\u7684\u6570\u5b57\u4eba\u5f62\u8c61\uff0c\u7528\u4e34\u5e8a\u95ee\u8bca\u4e13\u5bb6\u65b9\u5f0f\u503e\u542c\u4e0e\u8ffd\u95ee\uff1b\u4e0d\u4e0b\u8bca\u65ad\uff0c\u7d27\u6025\u60c5\u51b5\u5f15\u5bfc\u6c42\u52a9",
+        "hobby": "\u780d\u6811\u3001\u6293\u718a\u3001\u641e\u5c0f\u53d1\u660e",
+        "job": "\u5fc3\u7406\u533b\u751f",
+        "name": "\u5149\u5934\u5f3a",
+        "position": "\u966a\u4f34",
+        "voice": "zhifeng_emo",
+        "zodiac": "\u864e"
+    },
+    "interact": {
+        "QnA": "qa.csv",
+        "maxInteractTime": 15,
+        "perception": {
+            "chat": 10,
+            "follow": 10,
+            "gift": 10,
+            "indifferent": 10,
+            "join": 10
+        },
+        "playSound": true,
+        "visualization": false
+    },
+    "items": [],
+    "make_it_animatable_api_url": "http://127.0.0.1:7860",
+    "memory": {
+        "isolate_by_user": true
+    },
+    "source": {
+        "automatic_player_status": false,
+        "automatic_player_url": "http://127.0.0.1:6000",
+        "liveRoom": {
+            "enabled": false,
+            "url": ""
+        },
+        "record": {
+            "device": "",
+            "enabled": false
+        },
+        "wake_word": "\u4f60\u597d",
+        "wake_word_enabled": false,
+        "wake_word_type": "front"
+    }
+}

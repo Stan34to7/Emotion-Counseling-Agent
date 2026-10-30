@@ -175,9 +175,8 @@ def _validate_character_attributes(attributes: Dict[str, Any]) -> tuple:
     return True, ""
 
 
-def chat_with_model(message: str, username: str, model_id: Optional[str] = None,
-                   system_prompt: Optional[str] = None, history: Optional[list] = None,
-                   use_knowledge_cards: bool = True) -> str:
+def chat_with_model(message: str, username: str, model_id: Optional[str] = None, 
+                   system_prompt: Optional[str] = None, history: Optional[list] = None) -> str:
     """
     使用对话LLM进行对话
     
@@ -241,14 +240,6 @@ def chat_with_model(message: str, username: str, model_id: Optional[str] = None,
                 else:
                     messages.append(HumanMessage(content=str(msg)))
         
-        if use_knowledge_cards:
-            from llm.knowledge_cards import retrieve_card_context
-
-            card_context, cards = retrieve_card_context(message)
-            if card_context:
-                messages.append(SystemMessage(content=card_context))
-                util.log(1, "[RAG] matched cards: " + ", ".join(card["id"] for card in cards))
-
         # 添加当前用户消息
         messages.append(HumanMessage(content=message))
         
